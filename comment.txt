@@ -1,0 +1,12 @@
+Rifare l'esercizio in classe:
+Creare una toDoList dove l'utente inserisce tramite un input quello che deve fare.
+Come lo inserisce? Button "Aggiungi" e clickando su enter (@keyup.enter).
+L'utente deve inoltre poter rimuovere le cose che ha da fare clickando su un X (icona fontAwesome)
+
+JS
+- Creare lista array vuota, all'interno della quale verrà pushato di volta in volta quello che scrive l'utente
+- Creare una funzione addTask con la quale aggiungere nella lista vuota quello che ha scritto l'utente nell'input
+- Creare una funzione deleteTask con la quale eliminate dalla lista vuota quello che ha vuole l'utente tramite i click.
+    |
+   \ /
+   Lavorare sull'index dell'array con splice(start, n° elemento da eliminare a partire dallo start)
