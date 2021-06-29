@@ -14,6 +14,37 @@
 <body>
     <div id="app">
 
+        <header class="container">
+            <!-- Img -->
+        </header>
+
+        <nav class="container">
+            <div class="row">
+
+                <!-- Input + v-model = per pushare quello che scrive l'utente qui nell'array -->
+                
+                <input 
+                    class="col-8" 
+                    v-model="newTaskToDo" 
+                    placeholder="Nuovo Task" 
+                    @keyup.enter="addTask">
+
+                <button 
+                    class="col-4" 
+                    @click="addTask">
+                    Aggiungi
+                </button>
+            </div>
+        </nav>
+
+        <main class="container">
+            <ul class="row">
+                <li v-for="task in toDoList">
+                    {{ task }}
+                </li>
+            </ul>
+        </main>
+
     </div>
 
 
