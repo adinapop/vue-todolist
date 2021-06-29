@@ -6,7 +6,10 @@ L'utente deve inoltre poter rimuovere le cose che ha da fare clickando su un X (
 JS
 - Creare lista array vuota, all'interno della quale verrà pushato di volta in volta quello che scrive l'utente
 - Creare una funzione addTask con la quale aggiungere nella lista vuota quello che ha scritto l'utente nell'input
-- Creare una funzione deleteTask con la quale eliminate dalla lista vuota quello che ha vuole l'utente tramite i click.
+- Creare una funzione deleteTask con la quale eliminate dalla lista vuota quello che vuole l'utente tramite il click sull'icona.
     |
    \ /
    Lavorare sull'index dell'array con splice(start, n° elemento da eliminare a partire dallo start)
+
+TRY: Autofocus -> ripassa mounted
+               -> creare una function per l'autofocus in modo tale da averlo al refresh della pagina, quando l'utente ha inserito già un task e l'ha inviato e anche quando ne ha cancellato uno 

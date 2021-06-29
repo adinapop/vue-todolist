@@ -23,25 +23,31 @@
 
                 <!-- Input + v-model = per pushare quello che scrive l'utente qui nell'array -->
                 
-                <input 
-                    class="col-8" 
+                <input class="col-8" 
                     v-model="newTaskToDo" 
                     placeholder="Nuovo Task" 
                     @keyup.enter="addTask">
 
-                <button 
-                    class="col-4" 
+                <button class="col-4" 
                     @click="addTask">
                     Aggiungi
                 </button>
+            
             </div>
         </nav>
 
         <main class="container">
             <ul class="row">
+
                 <li v-for="task in toDoList">
                     {{ task }}
+                    
+                    <i class="fas fa-trash-alt" 
+                        @click="deleteTask">
+                    </i>
+
                 </li>
+
             </ul>
         </main>
 
