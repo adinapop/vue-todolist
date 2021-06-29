@@ -1,0 +1,41 @@
+img {
+    width: 100%;
+} 
+
+input {
+    margin-right: 12px;
+    border-radius: 12px; 
+    border: 1px solid gray;
+    padding: 12px; 
+    box-shadow: 0 0 3px whitesmoke;
+}
+/* FIX THE OUTLINE BORDER */
+
+button {
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+ul {
+    background-color: #efefef;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #dbdee1;
+}
+
+ul li:hover {
+    background-color: white;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+
+
+

@@ -14,21 +14,23 @@
 <body>
     <div id="app">
 
-        <header class="container">
-            <!-- Img -->
+        <header class="container mt-3 mb-3">
+            <div class="row justify-content-center">
+                <img class="col-4" src="./img/logo.png" alt="Logo Boolean">
+            </div>
         </header>
 
-        <nav class="container">
-            <div class="row">
+        <nav class="container mt-4">
+            <div class="row justify-content-center">
 
                 <!-- Input + v-model = per pushare quello che scrive l'utente qui nell'array -->
                 
-                <input class="col-8" id="autofocus-input"
+                <input class="col-4" id="autofocus-input"
                     v-model="newTaskToDo" 
-                    placeholder="Nuovo Task" 
+                    placeholder="Nuovo Task.." 
                     @keyup.enter="addTask">
 
-                <button class="col-4" 
+                <button class="col-2" 
                     @click="addTask">
                     Aggiungi
                 </button>
@@ -36,17 +38,22 @@
             </div>
         </nav>
 
-        <main class="container">
-            <ul class="row">
+        <main class="container mt-5">
 
-                <li v-for="task in toDoList">
-                    {{ task }}
-                    <i class="fas fa-trash-alt" 
+            <div class="row justify-content-center items-container">
+
+                <ul class="col-10">
+                    
+                    <li
+                        v-for="task in toDoList">
+                        {{ task }}
+                        <i class="fas fa-trash-alt" 
                         @click="deleteTask">
-                    </i>
-                </li>
-
-            </ul>
+                        </i>
+                    </li>
+            
+                </ul>
+            </div>
         </main>
 
     </div>
