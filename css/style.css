@@ -1,18 +1,17 @@
-img {
-    width: 100%;
-} 
+img {width: 100%;} 
 
 input {
     margin-right: 12px;
-    border-radius: 12px; 
     border: 1px solid gray;
+    border-radius: 12px;
     padding: 12px; 
     box-shadow: 0 0 3px whitesmoke;
 }
-/* FIX THE OUTLINE BORDER */
+
+input:focus {border-radius: 0;}
 
 button {
-    border: 1px solid black;
+    border: 1px solid gray;
     border-radius: 12px;
 }
 
@@ -27,7 +26,7 @@ ul li {
     justify-content: space-between;
     align-items: center;
     padding: 12px;
-    border-bottom: 1px solid #dbdee1;
+    border-bottom: 1px solid gray;
 }
 
 ul li:hover {

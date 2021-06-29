@@ -17,7 +17,7 @@ new Vue (
             // giusto per provare, faccio partire l'autofocus dopo 1s
             setTimeout(() => {
                 this.autofocusFunction();
-            }, 1000);
+            }, 1500);
         },
 
         methods: {
@@ -26,7 +26,12 @@ new Vue (
                 focusElement.focus();
             },
 
+            toUpperCase: function(word) {
+                word.charAt(0).toUpperCase() + word.slice(1);
+            },
+
             addTask: function () {
+                this.newTaskToDo = this.newTaskToDo[0].toUpperCase() + this.newTaskToDo.slice(1);
                 this.toDoList.push(this.newTaskToDo);
                 // aggiungendo dopo una stringa vuota ci elimina quello scritto precedentemnte e lascia spazio nuovo per scrivere
                 this.newTaskToDo = "";
@@ -37,7 +42,7 @@ new Vue (
                 //da questa lista togli un elemento a partire dall'index = che è lo start
                 this.toDoList.splice(index, 1);
                 this.autofocusFunction();
-            }
+            },
         }
     }
 )
