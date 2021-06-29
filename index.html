@@ -23,7 +23,7 @@
 
                 <!-- Input + v-model = per pushare quello che scrive l'utente qui nell'array -->
                 
-                <input class="col-8" 
+                <input class="col-8" id="autofocus-input"
                     v-model="newTaskToDo" 
                     placeholder="Nuovo Task" 
                     @keyup.enter="addTask">
@@ -41,11 +41,9 @@
 
                 <li v-for="task in toDoList">
                     {{ task }}
-                    
                     <i class="fas fa-trash-alt" 
                         @click="deleteTask">
                     </i>
-
                 </li>
 
             </ul>
